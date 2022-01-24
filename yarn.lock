@@ -1919,7 +1919,7 @@
     "@commitlint/rules" "^16.0.0"
     "@commitlint/types" "^16.0.0"
 
-"@commitlint/load@>6.1.1", "@commitlint/load@^16.0.0", "@commitlint/load@^16.1.0":
+"@commitlint/load@>6.1.1", "@commitlint/load@^16.1.0":
   version "16.1.0"
   resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-16.1.0.tgz#7a884072ab915611080c5e99a1f1d999c05f4360"
   integrity sha512-MtlEhKjP8jAF85jjX4mw8DUUwCxKsCgAc865hhpnwxjrfBcmGP7Up2AFE/M3ZMGDmSl1X1TMybQk/zohj8Cqdg==

@@ -13,19 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
 import { Dashboard } from "./dashboad";
 
-const Routes = () => {
+const MyRoutes = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={LoginPage} />
-      <Route path="/nova-sessao" component={LoginPage} />
+    <Routes>
+      <Route exact path="/" element={<LoginPage/>} />
+      <Route path="/nova-sessao" element={<LoginPage/>} />
 
-      <Route path="/" component={Dashboard} />
-    </Switch>
+      <Route path="/" element={<Dashboard/>} />
+    </Routes>
   );
 };
 
-export default Routes;
+export default MyRoutes;

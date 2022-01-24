@@ -17,7 +17,7 @@ import {ToastContainer} from "react-toastify";
 import {BrowserRouter} from "react-router-dom";
 import {ThemeProvider} from "styled-components";
 import GlobalStyle, {Container, Layout} from "./style/GlobalStyle";
-import Routes from "./routes";
+import MyRoutes from "./routes";
 import "react-toastify/dist/ReactToastify.css";
 import light from "./style/themes/light";
 // import dark from "./style/themes/dark";
@@ -28,7 +28,7 @@ function App() {
             <ThemeProvider theme={light}>
                 <Layout>
                     <Container>
-                        <Routes/>
+                        <MyRoutes/>
                     </Container>
                 </Layout>
 

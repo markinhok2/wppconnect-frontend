@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import SendMessagePage from "../pages/ChatPage";
 import ContactsPage from "../pages/Contacts";
 import Sidebar from "../components/Sidebar";
@@ -23,15 +23,15 @@ import { DrawerLeft, DrawerProvider } from "../components/Drawer";
 export function Dashboard() {
   return (
     <div style={{ display: "flex", width: "100%", overflow: "hidden" }}>
-      <Switch>
+      <Routes>
         <DrawerProvider>
           <DrawerLeft menuContent={<Sidebar />}>
-            <Route path="/chat" component={SendMessagePage} />
-            <Route path="/contatos" component={ContactsPage} />
-            <Route path="/grupo" component={GroupPage} />
+            <Route path="/chat" element={<SendMessagePage/>} />
+            <Route path="/contatos" element={<ContactsPage/>} />
+            <Route path="/grupo" element={<GroupPage/>} />
           </DrawerLeft>
         </DrawerProvider>
-      </Switch>
+      </Routes>
     </div>
   );
 }
